@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktik 2.1</title>
+</head>
+<body>
+
+    <form style="border: 1px solid black; width: fit-content; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+        <h3>Formulir Pendaftaran Kursus</h3>
+
+        <table border="0">
+            <tr>
+                <td> Nama </td>
+                <td> : </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td> Jenis </td>
+                <td> : </td>
+                <td>
+                    <input type="radio" name = "subject" value = "Laki-laki"> Laki-laki
+                    <input type="radio" name = "subject" value = "Perempuan"> Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td> Alamat </td>
+                <td> : </td>
+                <td>
+                    <input type="text" name = "Alamat">
+                </td>
+            </tr>
+
+            <tr>
+                <td> Provinsi </td>
+                <td> : </td>
+                <td>    
+                    <select name = "dropdown">
+                        <option value = "Jawa Barat" selected>Jawa Barat</option>
+                        <option value = "Jawa Tengah">Jawa Tengah</option>
+                    </selecct>   
+                </td>
+            </tr>
+
+            <tr>
+                <td> Pilihan Kursus </td>
+                <td> : </td>
+                <td >
+                    <input type="checkbox" name = "Kursus" value = "Bahasa Inggris"> Bahasa Inggris
+                    <br>
+                    <input type="checkbox" name = "Kursus" value = "Komputer"> Komputer
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <br>
+<!-- tugas praktik 2.2 -->
+    <br>
+    <form>
+        <table border="2" width="400">
+            <tr style="background-color:lavender;">
+                <th style="width: 50%;">Name</th>
+                <th style="width: 50%;">Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" style="width: 97%;"></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><input type="radio">Male<br> <input type="radio">Female</td>
+            </tr>
+            <tr>
+                <td> Eye colour</td>
+                <td>
+                    <select name="dropdown">
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="brown">brown</option>
+                        <option value="black">black</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <input type="checkbox">Over 6 feet tall
+                    <br>
+                    <input type="checkbox">Over 200 pounds
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> Describe your athletic ability: 
+                    <br>
+                    <textarea rows="5" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Enter my information">
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
