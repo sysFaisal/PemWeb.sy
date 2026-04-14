@@ -1,72 +1,73 @@
+<p style="display: none;" >Highlight validasi Email</p>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan 4</title>
+    <style>
+        body{
+            margin: 30px;
+        }
+        .form-row{
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+        }
+        p{
+            margin: 0;
+        }
+        .p{
+            width: 115px;
+        }
+        .input{
+            width: 220px;
+        }
+    </style>
 </head>
 <body>
     <form>
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>
-                    <p>Nama Lengkap</p>
-                </td>
-                <td>
-                    <input type="text" placeholder="Masukkan Nama Lengkap Anda" name="nama_lengkap" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Username</p>
-                </td>
-                <td>
-                    <input type="text" placeholder="Masukkan Username" name="username" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Password</p>
-                </td>
-                <td>
-                    <input type="password" placeholder="Masukkan Password" name="password" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Tanggal Lahir</p>
-                </td>
-                <td>
-                    <input type="date" name="birth" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Email</p>
-                </td>
-                <td>
-                    <input type="email" placeholder="Masukkan Email" name="email" size="30"required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Telepon</p>
-                </td>
-                <td>
-                    <input type="number" placeholder="Masukkan Telepon" name="telepon" size="16" required>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" value="Buat Akun Saya">
-                </td>
-            </tr>
-        </table>
+        <div class="form-row">
+            <p class="p">
+                Nama Lengkap :
+            </p>
+            <input type="text" name="nama" placeholder="Masukkan Nama Lengkap Anda" class="input" required>
+        </div>
+        <div class="form-row">
+            <p class="p">
+                Username :
+            </p>
+            <input type="text" nama="username" placeholder="Masukkan Username" class="input" required>
+        </div>
+        <div class="form-row">
+            <p class="p">
+                Password :
+            </p>
+            <input type="password" nama="password" placeholder="Masukkan Password" class="input" min="8" required>
+        </div>
+        <div class="form-row">
+            <p class="p">
+                Tanggal Lahir :
+            </p>
+            <input type="date" nama="date" required>
+        </div>
+        <div class="form-row">
+            <p class="p">
+                Email :
+            </p>
+            <input type="email" nama="email" placeholder="Masukkan Alamat email Anda" class="input" size="30" required>
+        </div>
+        <div class="form-row">
+            <p class="p">
+                Telepon :
+            </p>
+            <input type="number" name="telepon" placeholder="Masukkan Nomor Telepon Anda" class="input" maxlength="12" required>
+        </div>
+        <div class="form-row">
+            <p class="p"></p>
+            <input type="submit" value="Submit">
+        </div>
     </form>
 </body>
 </html>

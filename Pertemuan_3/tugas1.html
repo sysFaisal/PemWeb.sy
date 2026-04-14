@@ -3,78 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas 1</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+        p {
+            margin: 0;
+        }
+        .p {
+            width: 80px;
+        }
+        .form-row{
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+        }
+        .label-from{
+            display: flex;
+            flex-direction: row;
+            margin-right: 5px;
+        }
+    </style>
+
 </head>
 <body>
     <form>
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>
-                    <p>Nama Lengkap</p>
-                </td>
-                <td>
-                    <input type="text" placeholder="Masukkan Nama Lengkap Anda" name="nama_lengkap" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Username</p>
-                </td>
-                <td>
-                    <input type="text" placeholder="Masukkan Username" name="username" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Password</p>
-                </td>
-                <td>
-                    <input type="password" placeholder="Masukkan Password" name="password" size="50" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Tanggal Lahir</p>
-                </td>
-                <td>
-                    <input type="date" name="birth" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Email</p>
-                </td>
-                <td>
-                    <input type="email" placeholder="Masukkan Email" name="email" size="30"required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Telepon</p>
-                </td>
-                <td>
-                    <input type="number" placeholder="Masukkan Telepon" name="telepon" size="16" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Website</p>
-                </td>
-                <td>
-                    <input type="url" placeholder="Masukkan Website" name="website" >
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" value="Buat Akun Saya">
-                </td>
-            </tr>
-        </table>
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p">Nama </p>
+                <p>:</p>
+            </div>
+            <input type="text" placeholder="Isikan Nama Anda" pattern="[A-Za-z ]+" title="Hanya huruf dan spasi yang diperbolehkan" required>
+        </div>
+
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p">Usia </p>
+                <p>:</p>
+            </div>
+            <input style="width: 80px;" type="number" min="17" max="30"   required>
+            <p style="margin-left: 5px;">(Usia min 17-30)</p>
+        </div>
+
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p">Email </p>
+                <p>:</p>
+            </div>
+            <input type="email" placeholder="nama_email@host.com" required>
+        </div>
+
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p">Web </p>
+                <p>:</p>
+            </div>
+            <input style="width: 240px;" type="url" placeholder="https://">
+        </div>
+
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p">Password </p>
+                <p>:</p>
+            </div>
+            <input style="width: 150px;" type="password" placeholder="Semua karakter, min 8" min="8" required>
+            <p style="margin-left: 5px;" >(Bonus)</p>
+        </div>
+        <div class="form-row">
+            <div class="label-from">
+                <p class="p"></p>
+                <p style="width: 5px;"></p>
+            </div>
+            <input type="submit" value="Submit" >
+        </div>
     </form>
 </body>
 </html>
