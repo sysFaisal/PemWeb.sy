@@ -5,107 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas 1</title>
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" rel="stylesheet">
-    <style>
-        p {
-            margin: 0;
-        }
-        @font-face {
-            font-family: "Geist";
-            
-            src: url("/Pertemuan_4/fonts/Geist-Thin.ttf") format("truetype");
-            font-weight: 100;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-ExtraLight.ttf") format("truetype");
-            font-weight: 200;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-Light.ttf") format("truetype");
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-Regular.ttf") format("truetype");
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-Medium.ttf") format("truetype");
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-SemiBold.ttf") format("truetype");
-            font-weight: 600;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-Bold.ttf") format("truetype");
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts/Geist-ExtraBold.ttf") format("truetype");
-            font-weight: 800;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Geist";
-            src: url("/Pertemuan_4/fonts//Geist-Bold.ttf") format("truetype");
-            font-weight: 900;
-            font-style: normal;
-        }
-        body {
-            font-family: "Geist";
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh; width: 1080px; margin: auto;">
-    <nav style="display: flex; padding-left: 40px; padding-right: 40px; justify-content: space-between; margin-top: 20px;">
-        <div>
-            <p style="font-weight: 500; font-size: 24px;"> Nyoba Ach!!</p>
+<body class="main-container">
+    <nav>
+        <div class="logo">
+            <p>Nyoba Ach!!</p>
         </div>
-        <div style="display: flex; flex-direction: row; gap: 30px; align-items: center; font-size: 18px; ">
-            <p>
-                Login dulu lee...
-            </p>
+        <div class="nav-login">
+            <p>Login dulu lee...</p>
         </div>
-        <div style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+        <div class="nav-social">
             <a href="https://github.com/sysFaisal">
-                <i style="color: black; font-size: 30px;" class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github"></i>
             </a>
-            <img style="width: 40px; height: 40px; border-radius: 100%;" src="/Pertemuan_4/me.jpg" alt="Me">
+            <img src="/Pertemuan_4/me.jpg" alt="Me">
         </div>
     </nav>
 
-    <section style="display: flex; flex-grow: 1; flex-direction: column; justify-content: center; align-items: center;">
-        <div style="display: flex; flex-direction: row; border: 1px solid #6b7282; padding: 15px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-            <div style="display: flex; padding-right: 15px;">
-                <img style="border-radius: 10px; width: 200px; height: auto; align-self: stretch; object-fit: cover;" src="/Pertemuan_4/me.jpg ">
+    <section class="section-login">
+        <div class="login-card">
+            <div class="login-image">
+                <img src="/Pertemuan_4/me.jpg">
             </div>
-            <div style="width: 400px;">
-                <h1 style="margin-top: 0; font-weight: 400;"> Log in account </h1>
-                <form action="tugas1.2.html" style="display: flex; flex-direction: column; gap: 10px;">
-                    <input style="border-radius: 5px; padding: 12px; border: 1px solid #6b7282; background-color: #F5F5F5;" type="text" min="3" placeholder="Username" required>
-                    <input style="border-radius: 5px; padding: 12px; border: 1px solid #6b7282; background-color: #F5F5F5;" type="password" min="8" placeholder="Password" required>                        
-                    <p style="font-size: 14px;"> Bebas apa aja username dan passwordnya  ... </p>
-                    <input style="border-radius: 5px; padding: 12px; background-color: black; color: white; border: 1px solid black;" value="Submit" type="submit">
+            <div class="login-form">
+                <h1>Log in account</h1>
+                <form action="tugas1.2.html">
+                    <input type="text" min="3" placeholder="Username" required>
+                    <input type="password" min="8" placeholder="Password" required>                        
+                    <p>Bebas apa aja username dan passwordnya  ...</p>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
